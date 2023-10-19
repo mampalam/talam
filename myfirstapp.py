@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-
+import time
 option = st.sidebar.selectbox(
     'Select a mini project',
      ['line chart','map','T n C','Long Process'])
