@@ -11,13 +11,12 @@ This app predicts the **Advertising Sale** type!
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    Newspaper = st.sidebar.slider('Newspaper', 0, 80, 50)
-    TV = st.sidebar.slider('TV', 0, 250, 50)
-    Radio = st.sidebar.slider('Radio', 0, 80, 50)
+    Newspaper = st.sidebar.slider('Newspaper', 55.0, 90.0, 58.4)
+    TV = st.sidebar.slider('TV', 10.0, 300.0, 151.5)
+    Radio = st.sidebar.slider('Radio', 10.0, 50.0, 41.3)
     data = {'Newspaper': Newspaper,
             'TV': TV,
-            'Radio': Radio,
-            }
+            'Radio': Radio}
     features = pd.DataFrame(data, index=[0])
     return features
 
