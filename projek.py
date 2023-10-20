@@ -1,3 +1,4 @@
+%%writefile projek.py
 import streamlit as st
 import pandas as pd
 import pickle
@@ -11,9 +12,9 @@ This app predicts the **Advertising Sale** type!
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    Newspaper = st.sidebar.slider('Newspaper', 0, 80, 50)
-    TV = st.sidebar.slider('TV', 0, 250, 50)
-    Radio = st.sidebar.slider('Radio', 0, 80, 50)
+    Newspaper = st.sidebar.slider('Newspaper', 45.0, 50.0, 69.0)
+    TV = st.sidebar.slider('TV', 16.0, 150.0, 230.0))
+    Radio = st.sidebar.slider('Radio', 10.0, 20.5, 45.9)
     data = {'Newspaper': Newspaper,
             'TV': TV,
             'Radio': Radio,
